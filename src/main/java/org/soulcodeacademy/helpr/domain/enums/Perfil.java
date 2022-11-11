@@ -1,6 +1,6 @@
 package org.soulcodeacademy.helpr.domain.enums;
 
-//Enum delimita um conjutno de valores constantes
+//Enum delimita um conjunto de valores constantes
 public enum Perfil {
     ADMINISTRADOR, // 0
     FUNCIONARIO, // 1

@@ -8,7 +8,7 @@ public class FuncionarioDTO extends UsuarioDTO {
     @NotNull(message = "idCargo é obrigatório")
     private Integer idCargo;
 
-    private String getFoto() {
+    public String getFoto() {
         return foto;
     }
 
