@@ -3,6 +3,7 @@ package org.soulcodeacademy.helpr.domain.dto;
 import org.soulcodeacademy.helpr.domain.enums.StatusChamado;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 public class ChamadoDTO {
     @NotBlank(message = "título é obrigtório")
@@ -13,7 +14,7 @@ public class ChamadoDTO {
 
     private StatusChamado status;
 
-    @NotBlank(message = "idCliente é obrigatório")
+    @NotNull(message = "idCliente é obrigatório")
     private Integer idCliente;
 
     private Integer idFuncionario;
