@@ -1,5 +1,6 @@
 package org.soulcodeacademy.helpr.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.soulcodeacademy.helpr.domain.enums.Perfil;
 
 import javax.persistence.*;
@@ -20,6 +21,7 @@ public abstract class Usuario {
     @Column(nullable = false, unique = true, length = 11)
     protected String cpf;
 
+    @JsonIgnore //impede a leitura da senha no JSON
     @Column(nullable = false)
     protected String senha;
 

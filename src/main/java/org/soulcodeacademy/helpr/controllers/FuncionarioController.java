@@ -23,6 +23,11 @@ public class FuncionarioController {
         return this.funcionarioService.listar(); //JSON = JAVASCRIPT OBJECT NOTATION
     }
 
+    @GetMapping("/funcionarios/salario")
+    public List<Funcionario> listarPorFaixaSalarial(@RequestParam Double valor1, @RequestParam Double valor2) {
+        return this.funcionarioService.listarPorFaixaSalarial(valor1, valor2);
+    }
+
     @GetMapping("/funcionario/{idFuncionario}")
     public Funcionario getFuncionario(@PathVariable Integer idFuncionario) {
         //@PathVariable => extrai do endpoint o valor dinâmico
